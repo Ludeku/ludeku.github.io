@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import icon from '../icon.png';
 import titlescreen from '../titlescreen.png';
 import screenshot from '../screenshot.png';
+import getOnGooglePlay from '../get-on-google-play.png';
+import getOnAppStore from '../get-on-app-store.png';
 
 const styles = {
   layout: {
@@ -100,6 +102,18 @@ const Games = () => {
           <div style={styles.screenshots}>
             <img src={titlescreen} style={styles.title} alt="titlescreen" height={320} />
             <img src={screenshot} style={styles.title} alt="screenshot" height={320} />
+          </div>
+        </div>
+
+        <div style={styles.section}>
+          <h2 style={styles.title}>Links</h2>
+          <div style={styles.screenshots}>
+            <a href='https://play.google.com/store/apps/details?id=net.ludeku.slimerusher'>
+              <img src={getOnGooglePlay} alt="googleplay-link" height={32} />
+            </a>
+            <a href='https://apps.apple.com/app/slime-rusher/id6450149514'>
+              <img src={getOnAppStore} alt="appstore-link" height={32} />
+            </a>
           </div>
         </div>
       </div>

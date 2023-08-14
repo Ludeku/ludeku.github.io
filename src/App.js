@@ -2,7 +2,7 @@ import Home from './components/Home';
 import {
   Routes,
   Route,
-  HashRouter,
+  BrowserRouter,
 } from "react-router-dom";
 import Privacy from './components/Privacy';
 
@@ -20,12 +20,12 @@ const styles = {
 function App() {
   return (
     <div style={styles.container}>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/privacy" element={<Privacy />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
 
   );
